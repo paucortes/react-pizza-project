@@ -1,7 +1,91 @@
 /* This is a bit better than setting border-box everywhere */
+
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
-*, *::before, *::after {
-  box-sizing: inherit;
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.myLogo {
+    height: 200px;
+    width: 200px;
+    justify-content: flex-start;
+}
+
+.main-menu nav nav-pills {
+    text-align: center;
+}
+
+.nav-pills {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    padding: 30px;
+}
+
+.buttonsBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.logoBox {
+    display: flex;
+}
+
+.jumbotron {
+    text-align: center;
+}
+
+.userInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.userInfoBoxes {
+    display: flex;
+    padding: 10px;
+    justify-content: flex-end;
+    width: 65%;
+}
+
+.userInfoBoxes p, input {
+    height: 30px;
+}
+
+.userInfoBoxes input {
+    margin-left: 20px;
+    width: 250px;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+}
+
+.thumbnail {
+    height:500px;
+    width: 400px;
+}
+
+.toppings {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.cheese-list .meat-list .veggie-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.form-control {
+    height: 46px !important;
 }
